@@ -73,13 +73,14 @@ print(f"Tokens Used: {response.usage.total_tokens}")
 ```
 
 ## Available Models <a name="available-models"></a>
-| Model Name         | Context Window | Best For                   | Web Access |
-|--------------------|---------------|----------------------------|------------|
-| botintel-v3       | 8K tokens      | General purpose AI         | ❌         |
-| botintel-pro      | 32K tokens     | Technical problem solving  | ❌         |
-| botintel-v3-search| 4K tokens      | Real-time information      | ✅         |
-| imagen-1           | N/A            | Basic image generation      | ❌         |
-| imagen-2           | N/A            | Advanced image generation (latest and most improved) | ❌ | 
+
+| Model Name         | Context Window | Best For                                       | Web Access | Parameters | Architecture   | System Prompt Support |
+|--------------------|----------------|------------------------------------------------|------------|------------|----------------|-----------------------|
+| botintel-v3        | 8K tokens      | General purpose AI                             | ❌         | 789B       | Transformer    |          ✅          |
+| botintel-pro       | 32K tokens     | Technical problem solving                      | ❌         | N/A       | Transformer    |           ✅          |
+| botintel-v3-search | 4K tokens      | Real-time information                          | ✅         | 489B       | Transformer    |          ✅          |
+| imagen-1           | N/A            | Basic image generation                         | ❌         | N/A        | Diffusion      |          N/A         |
+| imagen-2           | N/A            | Advanced image generation (latest & most improved)| ❌      | N/A        | Diffusion      |          N/A         |
 
 ## Usage Examples <a name="usage-examples"></a>
 ### Web-Enhanced Search
